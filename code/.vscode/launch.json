@@ -1,0 +1,22 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "BMP via Cortex Debug",
+            "cwd": "${workspaceRoot}",
+            "executable": "./build/trinket.elf",
+            "request": "launch",
+            "type": "cortex-debug",
+            "servertype": "bmp",
+            "BMPGDBSerialPort": "/dev/cu.usbmodem7BAE6DB1",
+            "debuggerArgs": ["--nh"],
+            "runToMain": true,
+            "postRestartCommands": ["start"],
+            "svdFile": "${workspaceRoot}/.vscode/ATSAMD21E18A.svd"
+            //"showDevDebugOutput": true
+        }
+    ]
+}
