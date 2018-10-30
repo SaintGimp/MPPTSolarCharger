@@ -1,0 +1,191 @@
+EESchema Schematic File Version 4
+LIBS:MPPTSolarCharger-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 4 5
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L SaintGimp:INA260 U?
+U 1 1 5BBD0925
+P 5700 3750
+AR Path="/5BBC415B/5BBD0925" Ref="U?"  Part="1" 
+AR Path="/5BBDD0AD/5BBD0925" Ref="U?"  Part="1" 
+AR Path="/5BBD0868/5BBD0925" Ref="U?"  Part="1" 
+AR Path="/5BBDF12D/5BBDF5CE/5BBD0925" Ref="U4"  Part="1" 
+F 0 "U4" H 5500 4200 50  0000 C CNN
+F 1 "INA260" H 5850 4200 50  0000 C CNN
+F 2 "Package_SO:TSSOP-16_4.4x5mm_P0.65mm" H 5700 3200 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/ina260.pdf" H 6050 3650 50  0001 C CNN
+	1    5700 3750
+	1    0    0    -1  
+$EndComp
+Text HLabel 5250 3500 0    50   Input ~ 0
+IN+
+$Comp
+L Device:C C?
+U 1 1 5BBD092F
+P 4800 3950
+AR Path="/5BBC415B/5BBD092F" Ref="C?"  Part="1" 
+AR Path="/5BBDD0AD/5BBD092F" Ref="C?"  Part="1" 
+AR Path="/5BBD0868/5BBD092F" Ref="C?"  Part="1" 
+AR Path="/5BBDF12D/5BBDF5CE/5BBD092F" Ref="C16"  Part="1" 
+F 0 "C16" H 4915 3996 50  0000 L CNN
+F 1 "100nF" H 4915 3905 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 4838 3800 50  0001 C CNN
+F 3 "~" H 4800 3950 50  0001 C CNN
+	1    4800 3950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5300 3850 5000 3850
+Wire Wire Line
+	5300 3950 5200 3950
+$Comp
+L power:GND #PWR?
+U 1 1 5BBD093D
+P 4800 4150
+AR Path="/5BBC415B/5BBD093D" Ref="#PWR?"  Part="1" 
+AR Path="/5BBDD0AD/5BBD093D" Ref="#PWR?"  Part="1" 
+AR Path="/5BBD0868/5BBD093D" Ref="#PWR?"  Part="1" 
+AR Path="/5BBDF12D/5BBDF5CE/5BBD093D" Ref="#PWR015"  Part="1" 
+F 0 "#PWR015" H 4800 3900 50  0001 C CNN
+F 1 "GND" H 4805 3977 50  0000 C CNN
+F 2 "" H 4800 4150 50  0001 C CNN
+F 3 "" H 4800 4150 50  0001 C CNN
+	1    4800 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5BBD0943
+P 5700 2650
+AR Path="/5BBC415B/5BBD0943" Ref="#PWR?"  Part="1" 
+AR Path="/5BBDD0AD/5BBD0943" Ref="#PWR?"  Part="1" 
+AR Path="/5BBD0868/5BBD0943" Ref="#PWR?"  Part="1" 
+AR Path="/5BBDF12D/5BBDF5CE/5BBD0943" Ref="#PWR017"  Part="1" 
+F 0 "#PWR017" H 5700 2500 50  0001 C CNN
+F 1 "+3.3V" H 5715 2823 50  0000 C CNN
+F 2 "" H 5700 2650 50  0001 C CNN
+F 3 "" H 5700 2650 50  0001 C CNN
+	1    5700 2650
+	1    0    0    -1  
+$EndComp
+NoConn ~ 6100 3950
+Wire Wire Line
+	6100 3750 6200 3750
+Wire Wire Line
+	6100 3650 6200 3650
+$Comp
+L power:GND #PWR?
+U 1 1 5BBD094E
+P 5700 4250
+AR Path="/5BBC415B/5BBD094E" Ref="#PWR?"  Part="1" 
+AR Path="/5BBDD0AD/5BBD094E" Ref="#PWR?"  Part="1" 
+AR Path="/5BBD0868/5BBD094E" Ref="#PWR?"  Part="1" 
+AR Path="/5BBDF12D/5BBDF5CE/5BBD094E" Ref="#PWR018"  Part="1" 
+F 0 "#PWR018" H 5700 4000 50  0001 C CNN
+F 1 "GND" H 5705 4077 50  0000 C CNN
+F 2 "" H 5700 4250 50  0001 C CNN
+F 3 "" H 5700 4250 50  0001 C CNN
+	1    5700 4250
+	1    0    0    -1  
+$EndComp
+Text HLabel 6450 3500 2    50   Input ~ 0
+IN-
+Wire Wire Line
+	6450 3500 6400 3500
+$Comp
+L Device:C C?
+U 1 1 5BBD0956
+P 5950 2850
+AR Path="/5BBDD0AD/5BBD0956" Ref="C?"  Part="1" 
+AR Path="/5BBC415B/5BBD0956" Ref="C?"  Part="1" 
+AR Path="/5BBD0868/5BBD0956" Ref="C?"  Part="1" 
+AR Path="/5BBDF12D/5BBDF5CE/5BBD0956" Ref="C17"  Part="1" 
+F 0 "C17" H 6065 2896 50  0000 L CNN
+F 1 "100nF" H 6065 2805 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 5988 2700 50  0001 C CNN
+F 3 "~" H 5950 2850 50  0001 C CNN
+	1    5950 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5BBD095D
+P 5950 3000
+AR Path="/5BBDD0AD/5BBD095D" Ref="#PWR?"  Part="1" 
+AR Path="/5BBC415B/5BBD095D" Ref="#PWR?"  Part="1" 
+AR Path="/5BBD0868/5BBD095D" Ref="#PWR?"  Part="1" 
+AR Path="/5BBDF12D/5BBDF5CE/5BBD095D" Ref="#PWR019"  Part="1" 
+F 0 "#PWR019" H 5950 2750 50  0001 C CNN
+F 1 "GND" H 5955 2827 50  0000 C CNN
+F 2 "" H 5950 3000 50  0001 C CNN
+F 3 "" H 5950 3000 50  0001 C CNN
+	1    5950 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5200 3950 5200 4000
+$Comp
+L power:GND #PWR?
+U 1 1 5BBD0966
+P 5200 4000
+AR Path="/5BBDD0AD/5BBD0966" Ref="#PWR?"  Part="1" 
+AR Path="/5BBD0868/5BBD0966" Ref="#PWR?"  Part="1" 
+AR Path="/5BBDF12D/5BBDF5CE/5BBD0966" Ref="#PWR016"  Part="1" 
+F 0 "#PWR016" H 5200 3750 50  0001 C CNN
+F 1 "GND" H 5205 3827 50  0000 C CNN
+F 2 "" H 5200 4000 50  0001 C CNN
+F 3 "" H 5200 4000 50  0001 C CNN
+	1    5200 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4800 4100 4800 4150
+Wire Wire Line
+	5700 2650 5700 2700
+Wire Wire Line
+	5950 2700 5700 2700
+Connection ~ 5700 2700
+Wire Wire Line
+	5700 2700 5700 3150
+Wire Wire Line
+	4800 3650 5300 3650
+Wire Wire Line
+	5250 3500 5300 3500
+Wire Wire Line
+	5000 3850 5000 3150
+Wire Wire Line
+	5000 3150 5700 3150
+Connection ~ 5700 3150
+Wire Wire Line
+	5700 3150 5700 3250
+Wire Wire Line
+	4800 3650 4800 3800
+Wire Wire Line
+	4800 3650 4800 2350
+Wire Wire Line
+	4800 2350 6400 2350
+Wire Wire Line
+	6400 2350 6400 3500
+Connection ~ 4800 3650
+Connection ~ 6400 3500
+Wire Wire Line
+	6400 3500 6100 3500
+Text Notes 4850 4600 0    50   ~ 0
+I2C address 0x41
+Text HLabel 6200 3650 2    50   BiDi ~ 0
+SDA
+Text HLabel 6200 3750 2    50   BiDi ~ 0
+SCL
+$EndSCHEMATC

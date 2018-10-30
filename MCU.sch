@@ -1,0 +1,134 @@
+EESchema Schematic File Version 4
+LIBS:MPPTSolarCharger-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 5 5
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector_Generic:Conn_01x06 J3
+U 1 1 5BBE2C57
+P 2800 2750
+F 0 "J3" H 2720 3167 50  0000 C CNN
+F 1 "Conn_01x06" H 2720 3076 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical" H 2800 2750 50  0001 C CNN
+F 3 "~" H 2800 2750 50  0001 C CNN
+	1    2800 2750
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR020
+U 1 1 5BBE2CDB
+P 3350 2400
+F 0 "#PWR020" H 3350 2250 50  0001 C CNN
+F 1 "+3.3V" H 3365 2573 50  0000 C CNN
+F 2 "" H 3350 2400 50  0001 C CNN
+F 3 "" H 3350 2400 50  0001 C CNN
+	1    3350 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3350 2400 3350 2550
+Wire Wire Line
+	3000 2650 3950 2650
+Wire Wire Line
+	3950 2650 3950 2700
+$Comp
+L power:GND #PWR021
+U 1 1 5BBE2D1D
+P 3950 2700
+F 0 "#PWR021" H 3950 2450 50  0001 C CNN
+F 1 "GND" H 3955 2527 50  0000 C CNN
+F 2 "" H 3950 2700 50  0001 C CNN
+F 3 "" H 3950 2700 50  0001 C CNN
+	1    3950 2700
+	1    0    0    -1  
+$EndComp
+Text HLabel 3100 3050 2    50   Input ~ 0
+SDA
+Text HLabel 3100 2950 2    50   Input ~ 0
+SCL
+$Comp
+L power:+3.3V #PWR022
+U 1 1 5BBF0815
+P 4450 2700
+F 0 "#PWR022" H 4450 2550 50  0001 C CNN
+F 1 "+3.3V" H 4465 2873 50  0000 C CNN
+F 2 "" H 4450 2700 50  0001 C CNN
+F 3 "" H 4450 2700 50  0001 C CNN
+	1    4450 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R8
+U 1 1 5BBF08C6
+P 4450 2900
+F 0 "R8" H 4520 2946 50  0000 L CNN
+F 1 "4.3K" H 4520 2855 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 4380 2900 50  0001 C CNN
+F 3 "~" H 4450 2900 50  0001 C CNN
+	1    4450 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4450 2750 4450 2700
+Wire Wire Line
+	4450 3050 4450 3150
+Text Label 4250 3150 0    50   ~ 0
+SDA
+Wire Wire Line
+	4450 3150 4250 3150
+$Comp
+L power:+3.3V #PWR023
+U 1 1 5BBF0A27
+P 5000 2700
+F 0 "#PWR023" H 5000 2550 50  0001 C CNN
+F 1 "+3.3V" H 5015 2873 50  0000 C CNN
+F 2 "" H 5000 2700 50  0001 C CNN
+F 3 "" H 5000 2700 50  0001 C CNN
+	1    5000 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R9
+U 1 1 5BBF0A2D
+P 5000 2900
+F 0 "R9" H 5070 2946 50  0000 L CNN
+F 1 "4.3K" H 5070 2855 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 4930 2900 50  0001 C CNN
+F 3 "~" H 5000 2900 50  0001 C CNN
+	1    5000 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5000 2750 5000 2700
+Wire Wire Line
+	5000 3050 5000 3150
+Text Label 4800 3150 0    50   ~ 0
+SCL
+Wire Wire Line
+	5000 3150 4800 3150
+Text HLabel 3100 2850 2    50   Input ~ 0
+LOW_PWM
+Text HLabel 3100 2750 2    50   Input ~ 0
+HIGH_PWM
+Wire Wire Line
+	3100 2950 3000 2950
+Wire Wire Line
+	3100 3050 3000 3050
+Wire Wire Line
+	3100 2750 3000 2750
+Wire Wire Line
+	3000 2850 3100 2850
+Wire Wire Line
+	3000 2550 3350 2550
+$EndSCHEMATC
