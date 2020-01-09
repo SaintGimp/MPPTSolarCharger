@@ -1,6 +1,6 @@
 EESchema Schematic File Version 4
 LIBS:MPPTSolarCharger-cache
-EELAYER 26 0
+EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -41,7 +41,7 @@ AR Path="/5BBD0868/5BBD092F" Ref="C?"  Part="1"
 AR Path="/5BBDF12D/5BBDF5CE/5BBD092F" Ref="C16"  Part="1" 
 F 0 "C16" H 4915 3996 50  0000 L CNN
 F 1 "100nF" H 4915 3905 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 4838 3800 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4838 3800 50  0001 C CNN
 F 3 "~" H 4800 3950 50  0001 C CNN
 	1    4800 3950
 	1    0    0    -1  
@@ -114,7 +114,7 @@ AR Path="/5BBD0868/5BBD0956" Ref="C?"  Part="1"
 AR Path="/5BBDF12D/5BBDF5CE/5BBD0956" Ref="C17"  Part="1" 
 F 0 "C17" H 6065 2896 50  0000 L CNN
 F 1 "100nF" H 6065 2805 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 5988 2700 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5988 2700 50  0001 C CNN
 F 3 "~" H 5950 2850 50  0001 C CNN
 	1    5950 2850
 	1    0    0    -1  
