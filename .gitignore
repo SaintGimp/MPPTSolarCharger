@@ -4,6 +4,8 @@ build/
 *-backups
 *.bak
 *.kicad_pcb-bak
+*.kicad_sch-bak
 *.sch-bak
 fp-info-cache
 *.kicad_prl
+\#auto_saved_files#
